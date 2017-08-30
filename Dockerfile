@@ -6,6 +6,6 @@ FROM golang
 MAINTAINER James Ethridge
 
 RUN apt update \
-&& apt-get install python-pip \
+&& apt-get -y install python-pip \
 && pip install awscli \
 && go get -u -v github.com/gohugoio/hugo
